@@ -16,9 +16,5 @@ jobs:
       - run: flutter test
       - run: flutter build apk
         with:
-          tag: v1.0.0
-          release_name: Release v1.0.0
-          draft: false
-          prerelease: false
-          artifacts: build/app/outputs/flutter-apk/*.apk
+          artifacts: "build/app/outputs/apk/release/*.apk"
 
